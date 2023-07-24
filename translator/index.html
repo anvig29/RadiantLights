@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Language Translator</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src='/images/Logo.png' class='logo' alt='logo'>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/product/index.html">Products</a>
+            </li>
+            <li>
+                <a href="/translator/index.html">LanguageSupport</a>
+            </li>
+            <li>
+                <a href="/Donate/index.html">Donate</a>
+            </li>
+            <li>
+                <a href="/workshop/index.html">Workshops</a>
+            </li>
+            <li>
+                <a href="/Contact-Us/form.html">Contact Us</a>
+            </li>
+        </ul>
+        <!-- <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div> -->
+    </nav>
+    <header>
+        <!-- <br>
+        <br>
+        <br>
+        <br> -->
+        <h1><b>Language Translator<br> </b></h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <p><u>Erasing Language Barriers: Let Our Translator Be Your Guide.</u> <br>प्रिय कार्यकर्ताओं, एक टीम के रूप में संचार हमारी सफलता की कुंजी है। यदि आपको कभी किसी विशेष भाषा को समझने में कठिनाई
+    आती है, तो दिए गए भाषा अनुवादक बटन का उपयोग करने में संकोच न करें। वे भाषा की बाधाओं को दूर करने और सभी के लिए निर्बाध
+    संचार सुनिश्चित करने में मदद करने के लिए यहां हैं। भाषा विविधता की शक्ति को अपनाएं और हमारे अनुवादक को अपना विश्वसनीय
+    साथी बनने दें। साथ मिलकर, हम अधिक समावेशी और एकीकृत कार्यस्थल की दिशा में काम कर सकते हैं। आपके सहयोग के लिए धन्यवाद!बाएं अनुभाग से वह भाषा चुनें जिसका आप अनुवाद करना चाहते हैं और दाएं अनुभाग से वह भाषा चुनें जिसमें आप पाठ का अनुवाद करना
+    चाहते हैं।</p>
+
+    <!-- <div class="mode">
+        <label class="toggle" for="dark-mode-btn">
+            <div class="toggle-track">
+                <input type="checkbox" class="toggle-checkbox" id="dark-mode-btn" />
+                <span class="toggle-thumb"></span>
+                <img src="sun.png" alt="" />
+                <img src="moon.png" alt="" />
+            </div>
+        </label>
+    </div> -->
+    <div class="container">
+        <div class="card input-wrapper">
+            <div class="from">
+                <span class="heading">From :</span>
+                <div class="dropdown-container" id="input-language">
+                    <div class="dropdown-toggle">
+                        <ion-icon name="globe-outline"></ion-icon>
+                        <span class="selected" data-value="auto">Auto Detect</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="option active">DropDown Menu Item 1</li>
+                        <li class="option">DropDown Menu Item 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-area">
+                <textarea id="input-text" cols="30" rows="10" placeholder="Enter your text here"></textarea>
+                <div class="chars"><span id="input-chars">0</span> / 5000</div>
+            </div>
+            <div class="card-bottom">
+                <p>Or choose your document!</p>
+                <label for="upload-document">
+                    <span id="upload-title">Choose File</span>
+                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                    <input type="file" id="upload-document" hidden />
+                </label>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="swap-position">
+                <ion-icon name="swap-horizontal-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="card output-wrapper">
+            <div class="to">
+                <span class="heading">To :</span>
+                <div class="dropdown-container" id="output-language">
+                    <div class="dropdown-toggle">
+                        <ion-icon name="globe-outline"></ion-icon>
+                        <span class="selected" data-value="en">English</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="option active">DropDown Menu Item 1</li>
+                        <li class="option">DropDown Menu Item 2</li>
+                    </ul>
+                </div>
+            </div>
+            <textarea id="output-text" cols="30" rows="10" placeholder="Translated text will appear here"
+                disabled></textarea>
+            <div class="card-bottom">
+                <p>Download as a document!</p>
+                <button id="download-btn">
+                    <span>Download</span>
+                    <ion-icon name="cloud-download-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
